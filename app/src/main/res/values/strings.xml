@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VizeFinal Not Ortalama</string>
+    <string name="vizet">Vize Notunuzu Giriniz</string>
+    <string name="finalt">Final Notunuzu Giriniz</string>
+    <string name="hesapb">HESAPLA</string>
+    <string name="sonuct">Sonuç</string>
+</resources>

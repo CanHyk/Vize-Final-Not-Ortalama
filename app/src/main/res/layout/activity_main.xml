@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/vizet"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="@string/vizet"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/finalt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/finalt"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/finalt"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/hesapb"
+        app:layout_constraintEnd_toEndOf="@+id/vizet"
+        app:layout_constraintStart_toStartOf="@+id/vizet"
+        app:layout_constraintTop_toBottomOf="@+id/vizet" />
+
+    <Button
+        android:id="@+id/hesapb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/hesapb"
+        app:layout_constraintBottom_toTopOf="@+id/sonuct"
+        app:layout_constraintEnd_toEndOf="@+id/finalt"
+        app:layout_constraintStart_toStartOf="@+id/finalt"
+        app:layout_constraintTop_toBottomOf="@+id/finalt" />
+
+    <TextView
+        android:id="@+id/sonuct"
+        android:layout_width="215dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="313dp"
+        android:hint="@string/sonuct"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/hesapb"
+        app:layout_constraintStart_toStartOf="@+id/hesapb"
+        app:layout_constraintTop_toBottomOf="@+id/hesapb" />
+</androidx.constraintlayout.widget.ConstraintLayout>
